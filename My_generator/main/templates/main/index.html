@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main</title>
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "bootstrap/css/bootstrap.min.css" %}">
+</head>
+<body>
+	<div class="Test">
+		<h4>Test generator programm</h4>
+		{% block content %}
+		<a href="{% url "generate" %}"><button class="btn btn-success">Generate</button></a>
+		<a href="{% url "check" %}"><button class="btn btn-info">Check</button></a>
+		{% endblock %}
+	</div>
+	
+	<script type="text/javascript" src="{% static "bootstrap/js/jquery-3.6.0.min.js" %}"></script>
+	<script type="text/javascript" src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
+</body>
+</html>

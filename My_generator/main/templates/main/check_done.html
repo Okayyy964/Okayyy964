@@ -1,0 +1,6 @@
+{% extends "main/index.html" %}
+
+{% block content %}
+	<p>{{ text }}</p>
+	<a href="{% url "main" %}"><button class="btn btn-warning">Try again</button></a>
+{% endblock %}

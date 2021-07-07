@@ -1,0 +1,12 @@
+{% extends "main/index.html" %}
+
+
+
+{% block content %}
+	<p>Check working program</p>
+	<form method="post" action="{% url "post_check" %}">
+		{% csrf_token %}
+		{{form.text_code}}
+		<input type="submit" value="enter">
+	</form>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% extends "main/index.html" %}
+10 codes were generated with the anton group
+
+{% block content %}
+	<p>{{number}} codes were generated with group-{{group}}!</p>
+	<a href="{% url "main" %}"><button class="btn btn-warning">Try again</button></a>
+{% endblock %}
